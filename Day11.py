@@ -2,31 +2,32 @@ import random
 # guessing game
 
 
-computer_number = random.randint(1, 101)
+# computer_number = random.randint(1, 101)
 
 
-def game(lives):
-    print("\n----Welcome to number guessing game-----\nI'm thinking between number between 1 to 100")
-    while lives > 0:
-        print("\n")
-        user_input = int(input(f"You have {lives} lives remaining\nMake a guess:"))
-        if user_input < computer_number:
-            lives -= 1
-            print("Sorry low")
-        elif user_input > computer_number:
-            lives -=1
-            print("Sorry high")
-        else:
-            print("you guessed the number correct")
-    if lives == 0:       
-        print(f"\nYou ran out of lives. The number was {computer_number}") 
+# def game(lives):
+#     print("\n----Welcome to number guessing game-----\nI'm thinking between number between 1 to 100")
+#     while lives > 0:
+#         print("\n")
+#         user_input = int(input(f"You have {lives} lives remaining\nMake a guess:"))
+#         if user_input < computer_number:
+#             lives -= 1
+#             print("Sorry low")
+#         elif user_input > computer_number:
+#             lives -=1
+#             print("Sorry high")
+#         else:
+#             print("you guessed the number correct")
+#             break
+#     if lives == 0:       
+#         print(f"\nYou ran out of lives. The number was {computer_number}") 
 
-if input("Choose a dificulty type : Type 'easy' or 'hard': ").lower() == 'easy':
-    lives = 10
-    game(lives)
-else:
-    lives = 5
-    game(lives)
+# if input("Choose a dificulty type : Type 'easy' or 'hard': ").lower() == 'easy':
+#     lives = 10
+#     game(lives)
+# else:
+#     lives = 5
+#     game(lives)
     
 # higher or lower game
 # if you want to know how the games works search for higher or lower game in searchbar
